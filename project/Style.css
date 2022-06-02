@@ -1,14 +1,17 @@
 h1 {
-    color:antiquewhite;
+    color:darkorange;
+    text-align: center;
+    font-size: 64px;
 }
 
 a {
-    color: blueviolet;
+    color:brown;
+    text-decoration: none;
 }
 
 a:hover {
-    color:darkblue;
-    font-size: 25px;
+    color: darkblue;
+    font-size: 15px;
 }
 
 * {
@@ -39,10 +42,6 @@ body {
     padding-left: 50 px
 }
 
-.menu a {
-    text-decoration: none;
-}
-
 .meny a:hover {
     color: aqua;
 }
@@ -66,16 +65,24 @@ forma.form {
     height: 30px;
     margin: 10PX 15PX 15PX 10PX;
 }
-
-body {
-    background: #1;
-}
-
-h1 {
+h3 {
     text-align: center;
-    color: blue;
 }
-
-font-family: sans-serif. .content a {
-    text-decoration: none;
+img {
+    image-orientation: center;
+}
+h2 {
+    text-align: center;
+}
+.content a{
+    text-align: center;
+}
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto }
+p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68.
 }
