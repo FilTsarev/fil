@@ -7,18 +7,17 @@ function valideForm() {
     console.log(password);
     var email = document.getElementById("email").value;
     console.log(email);
-    if (typeof (name) == 'string' && typeof (password) == 'string' && typeof (email) == 'string') {
-        alert("Вы успешно зарегистрировались!")
-    } else {
-        alert("Проверьте правильность заполнения формы")
-
+    var reg_name = /^[а-яa-z]+$/i;
+    var reg_password = /^[a-z0-9]{5,100}$/i;
+    if (reg_name.test(name) == false) {
+        alert("Введите имя корректно");
+    }
+    if (reg_password.test(password) == false) {
+        alert("Введите пароль корректно");
+    }
+    if (reg_name.test(name) == true && reg_password.test(password) == true) {
+        alert("Вы успешно зарегистрировались")
+        user.text = name;
     }
 }
-
-function addtobusketbalenciaga() {
-    size = document.getElementById("size")
-    console.log(size)
-    alert(size)
-}
 document.querySelector(".button").addEventListener("click", valideForm);
-//document.querySelector(".balenciaga").addEventListener("click", addtobusketbalenciaga);
