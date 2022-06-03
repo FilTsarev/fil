@@ -1,24 +1,24 @@
-//function guess() {
-    //var guessnumber = 5;
-    //var ournumber = prompt("Введите число:")
-    //if (ournumber > guessnumber) {
-        //alert("Число должно быть меньше");
-        //return guess();
-    //} else if (ournumber == guessnumber) {
-        //return alert("Вы угадали!")
-    //} else {
-        //alert("Число должно быть меньше");
-        //return guess();
-    //} 
-//}
-function reminder() {
-    alert("Ты здесь слишком долго!");
-    
-}
-//setTimeout(reminder, 3000);
 function valideForm() {
-    alert("Проверка формы");
     var name = document.getElementById("name").value;
     console.log(name);
+    var login = document.getElementById("login").value;
+    console.log(login);
+    var password = document.getElementById("password").value;
+    console.log(password);
+    var email = document.getElementById("email").value;
+    console.log(email);
+    if (typeof (name) == 'string' && typeof (password) == 'string' && typeof (email) == 'string') {
+        alert("Вы успешно зарегистрировались!")
+    } else {
+        alert("Проверьте правильность заполнения формы")
+
+    }
+}
+
+function addtobusketbalenciaga() {
+    size = document.getElementById("size")
+    console.log(size)
+    alert(size)
 }
 document.querySelector(".button").addEventListener("click", valideForm);
+//document.querySelector(".balenciaga").addEventListener("click", addtobusketbalenciaga);
