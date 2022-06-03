@@ -23,19 +23,29 @@
                     <a href="registration.html">
                         <li>Регистрация</li>
                     </a>
+                    <a href="korzina.html">
+                        <li>Корзина</li>
+                    </a>
                 </ul>
             </div>
             <hr>
             <div class="forma">
                 <form action="#">
                     <h3>Форма для регистрации</h3>
-                    ФИО<input id = "name" type="text" placeholder="Фамилия Имя Отчество">
-                    Логин<input id = "login" type="text" placeholder="Уникальный индефикатор">
-                    Пароль<input id = "password" type="password" placeholder="Ваш пароль">
-                    Почта<input id = "email" type="email" placeholder="example@mail.com">
-                    <input class="button" type="submit">
-                    <input type="reset">
-                    <!--onclick="guess()"-->
+                    <h1> </h1>
+                    <h4>ФИО</h4>
+                    <input class="pole" id="name" type="text" placeholder="Фамилия Имя Отчество">
+                    <h4>Логин</h4>
+                    <input class="pole" id="login" type="text" placeholder="Телефон или почта">
+                    <h4>Пароль</h4>
+                    <input class="pole" id="password" type="password" placeholder="Пароль из цифр и букв">
+                    <h4>Почта</h4>
+                    <input class="pole" id="email" type="email" placeholder="example@mail.com">
+                    <input class="button" type="submit" click="valideForm()">
+                    <input class="button" type="reset">
+                    <a href="catalog.html">
+                        <h3>Назад к покупкам</h3>
+                    </a>
                 </form>
             </div>
         </div>
@@ -44,7 +54,7 @@
             <i>Все права защищены &copy. Tsarev market company 2022</i>
         </footer>
     </div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
